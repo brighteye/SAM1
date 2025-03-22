@@ -73,7 +73,7 @@ function Step2() {
             <div className="flex w-full items-center justify-between">
               <IconButton_Sam1
                 icon="FeatherArrowLeft"
-                onClick={(event: React.MouseEvent<HTMLButtonElement>) => {}}
+                onClick={() => window.location.href = '/'}
               />
               <Button_Sam1
                 disabled={false}
