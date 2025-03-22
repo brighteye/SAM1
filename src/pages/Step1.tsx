@@ -74,7 +74,7 @@ function Step1() {
                 icon={null}
                 iconRight={null}
                 loading={false}
-                onClick={(event: React.MouseEvent<HTMLButtonElement>) => {}}
+                onClick={() => window.location.href = '/step2'}
               >
                 Next
               </Button_Sam1>
