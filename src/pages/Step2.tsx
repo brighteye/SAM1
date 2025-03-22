@@ -82,7 +82,7 @@ function Step2() {
                 icon={null}
                 iconRight={null}
                 loading={false}
-                onClick={(event: React.MouseEvent<HTMLButtonElement>) => {}}
+                onClick={() => window.location.href = '/step3'}
               >
                 Create Message
               </Button_Sam1>
