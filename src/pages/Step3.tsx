@@ -1,0 +1,178 @@
+
+"use client";
+
+import React from "react";
+import { DefaultPageLayout } from "@/ui/layouts/DefaultPageLayout";
+import { Stepper_Sam1 } from "@/ui/components/Stepper_Sam1";
+import { Tooltip } from "@/ui/components/Tooltip";
+import * as SubframeCore from "@subframe/core";
+import { IconButton } from "@/ui/components/IconButton";
+import { Button } from "@/ui/components/Button";
+
+function Step3() {
+  return (
+    <DefaultPageLayout>
+      <div className="container max-w-none flex h-full w-full flex-col items-center justify-center gap-6 overflow-hidden bg-[#134e4aff] relative mobile:flex-col mobile:flex-nowrap mobile:gap-6">
+        <div className="flex items-start overflow-hidden absolute inset-0 mobile:flex-row mobile:flex-nowrap mobile:gap-0">
+          <img
+            className="grow shrink-0 basis-0 self-stretch object-cover mobile:h-auto mobile:grow mobile:shrink-0 mobile:basis-0 mobile:self-stretch mobile:object-cover"
+            src="https://res.cloudinary.com/subframe/image/upload/v1741494835/uploads/6509/bp89lea4jixduyac4emm.png"
+          />
+        </div>
+        <div className="hidden items-start overflow-hidden absolute inset-0 mobile:flex">
+          <img
+            className="grow shrink-0 basis-0 self-stretch object-cover"
+            src="https://res.cloudinary.com/subframe/image/upload/v1741733509/uploads/6509/nbt0rkjldzft6n488dl5.png"
+          />
+        </div>
+        <div className="flex w-full max-w-[768px] grow shrink-0 basis-0 flex-col items-center justify-center gap-2 py-6">
+          <div className="flex w-full grow shrink-0 basis-0 flex-col items-center gap-12 rounded-[8px] bg-[#ffffffe6] px-12 py-12 shadow-md relative mobile:h-auto mobile:w-auto mobile:flex-none mobile:px-6 mobile:py-11">
+            <Stepper_Sam1>
+              <Stepper_Sam1.Step
+                variant="completed"
+                firstStep={true}
+                stepNumber="1"
+                label="Challenge"
+              />
+              <Stepper_Sam1.Step
+                variant="completed"
+                stepNumber="2"
+                label="Outcome"
+              />
+              <Stepper_Sam1.Step
+                variant="active"
+                lastStep={true}
+                stepNumber="3"
+                label="Message"
+              />
+            </Stepper_Sam1>
+            <div className="flex w-full flex-col items-center gap-2">
+              <span className="text-heading-2 font-heading-2 text-default-font text-center">
+                (Here is your personal message)
+              </span>
+              <span className="text-heading-3 font-heading-3 text-default-font text-center">
+                (Here is a subline to the message)
+              </span>
+            </div>
+            <div className="flex w-full flex-col items-center gap-2">
+              <span className="text-body font-body text-default-font">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                nulla pariatur.
+              </span>
+              <span className="text-body font-body text-default-font">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                nulla pariatur.
+              </span>
+            </div>
+            <div className="flex w-full flex-col items-center gap-2">
+              <span className="text-heading-3 font-heading-3 text-default-font text-center">
+                (Here is a subhead)
+              </span>
+              <span className="text-body font-body text-default-font">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                nulla pariatur.
+              </span>
+            </div>
+            <div className="flex w-full items-start justify-center gap-2 px-1 py-1">
+              <SubframeCore.Tooltip.Provider>
+                <SubframeCore.Tooltip.Root>
+                  <SubframeCore.Tooltip.Trigger asChild={true}>
+                    <IconButton
+                      disabled={false}
+                      variant="neutral-tertiary"
+                      size="medium"
+                      icon="FeatherThumbsUp"
+                      loading={false}
+                      onClick={(
+                        event: React.MouseEvent<HTMLButtonElement>
+                      ) => {}}
+                    />
+                  </SubframeCore.Tooltip.Trigger>
+                  <SubframeCore.Tooltip.Portal>
+                    <SubframeCore.Tooltip.Content
+                      side="bottom"
+                      align="center"
+                      sideOffset={4}
+                      asChild={true}
+                    >
+                      <Tooltip>It&#39;s great!</Tooltip>
+                    </SubframeCore.Tooltip.Content>
+                  </SubframeCore.Tooltip.Portal>
+                </SubframeCore.Tooltip.Root>
+              </SubframeCore.Tooltip.Provider>
+              <SubframeCore.Tooltip.Provider>
+                <SubframeCore.Tooltip.Root>
+                  <SubframeCore.Tooltip.Trigger asChild={true}>
+                    <IconButton
+                      disabled={false}
+                      variant="neutral-tertiary"
+                      size="medium"
+                      icon="FeatherThumbsDown"
+                      loading={false}
+                      onClick={(
+                        event: React.MouseEvent<HTMLButtonElement>
+                      ) => {}}
+                    />
+                  </SubframeCore.Tooltip.Trigger>
+                  <SubframeCore.Tooltip.Portal>
+                    <SubframeCore.Tooltip.Content
+                      side="bottom"
+                      align="center"
+                      sideOffset={4}
+                      asChild={true}
+                    >
+                      <Tooltip>Not so great</Tooltip>
+                    </SubframeCore.Tooltip.Content>
+                  </SubframeCore.Tooltip.Portal>
+                </SubframeCore.Tooltip.Root>
+              </SubframeCore.Tooltip.Provider>
+            </div>
+          </div>
+          <div className="hidden w-112 flex-col items-center justify-center gap-12 rounded-[8px] bg-[#ffffffe6] px-6 py-24 shadow-md relative mobile:h-auto mobile:w-full mobile:flex-none mobile:rounded-[8px] mobile:bg-[#ffffffe6] mobile:pl-1 mobile:pr-4 mobile:py-14">
+            <div className="flex w-full flex-col items-center gap-2">
+              <span className="text-heading-1 font-heading-1 text-default-font">
+                Hi, I&#39;m Sam.
+              </span>
+              <span className="text-heading-2 font-heading-2 text-default-font">
+                Nice to meet you :)
+              </span>
+            </div>
+            <div className="flex w-full flex-col items-center gap-2">
+              <span className="text-body font-body text-default-font">
+                Ready to transform?
+              </span>
+              <span className="text-body font-body text-default-font">
+                Let&#39;s start...
+              </span>
+            </div>
+            <Button
+              size="large"
+              onClick={(event: React.MouseEvent<HTMLButtonElement>) => {}}
+            >
+              Next
+            </Button>
+          </div>
+          <div className="flex w-full flex-col items-center justify-center gap-12 rounded-[8px] bg-[#ffffffe6] px-6 py-9 shadow-md relative mobile:container mobile:max-w-none mobile:h-auto mobile:w-auto mobile:flex-none mobile:rounded-[8px] mobile:bg-[#ffffffe6] mobile:py-6">
+            <span className="text-body-bold font-body-bold text-subtext-color mobile:text-body-bold mobile:font-body-bold">
+              SCIENCE • ART • MAGIC
+            </span>
+          </div>
+        </div>
+      </div>
+    </DefaultPageLayout>
+  );
+}
+
+export default Step3;
