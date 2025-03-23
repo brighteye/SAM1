@@ -1,30 +1,22 @@
-# React + TypeScript + Vite
+# Readme: SAM1
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Based on https://github.com/SubframeApp/subframe-vite-starter-kit
 
-Currently, two official plugins are available:
+This is my first attempt developing an AI product.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+I'm about to do a bunch of stupid shit since I'm a human.
 
-## Expanding the ESLint configuration
+But, you have to start somewhere I guess, if you're going to learn.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+So, here I am, in all my embarrassing glory ;P 
+- Designing the app in Subframe (based on Figma mocks)
+- Importing the Subframe code into Replit to build a React app with the help of AI
+- Backing it up here 'cause a very wise person advised me to
 
-- Configure the top-level `parserOptions` property like this:
+Eventually, SAM will be able to tell your fortune.
+Predict your future.
+Guide your outlook on each day, month, year or any timeframe
+Support your dreams
+Keep you on track
+Connect you with what you really want in life
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
